@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Kage, Polygons } from '@kurgm/kage-engine';
-import { KageDto } from 'src/api/dto';
+import { KageDto } from 'src/dto';
 
 @Injectable()
 export class KageService {
@@ -8,7 +8,7 @@ export class KageService {
     const kage = new Kage();
     kage.kBuhin.push(inputed.target.name, inputed.target.data);
 
-    for (const glyph of inputed.children) {
+    for (const glyph of inputed.polygons) {
       console.log(glyph);
       kage.kBuhin.push(glyph.name, glyph.data);
     }
