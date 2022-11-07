@@ -1,4 +1,4 @@
-# hi-kage-server
+# kage-server
 
 An online font redering server using [Kage-engine](https://github.com/kurgm/kage-engine)
 
@@ -27,4 +27,4 @@ npm run start:prod
 
 ## License
 
-hi-kage-server is [GPLv3 licensed](LICENSE).
+kage-server is [GPLv3 licensed](LICENSE).
