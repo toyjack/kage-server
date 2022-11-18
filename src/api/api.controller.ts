@@ -7,7 +7,8 @@ export class ApiController {
   constructor(private kageService: KageService) {}
 
   @Post('gen')
-  gen(@Body() body: KageDto): any {
+  gen(@Body() body: KageDto) {
+    // console.log(body);
     return this.kageService.gen(body);
   }
 }

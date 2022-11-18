@@ -9,14 +9,12 @@ export class KageService {
     kage.kBuhin.push(inputed.target.name, inputed.target.data);
 
     for (const glyph of inputed.polygons) {
-      console.log(glyph);
       kage.kBuhin.push(glyph.name, glyph.data);
     }
 
     const polygons = new Polygons();
     kage.makeGlyph(polygons, inputed.target.name);
     const svg = polygons.generateSVG();
-    console.log(svg);
     return svg;
   }
 }
