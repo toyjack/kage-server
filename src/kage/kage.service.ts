@@ -4,7 +4,7 @@ import { KageDto } from 'src/dto';
 
 @Injectable()
 export class KageService {
-  gen(inputed: KageDto): any {
+  gen(inputed: KageDto): string {
     const kage = new Kage();
     kage.kBuhin.push(inputed.target.name, inputed.target.data);
 
